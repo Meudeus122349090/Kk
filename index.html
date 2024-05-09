@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <title>
+      Login
+    </title>
+  </head>
+  <body>
+    <div class="login">
+      <h1>Cadastro</h1>
+      <input id="input" type="Email" placeholder=" seu Email">
+      <br>
+       <input id="input1" type="password" placeholder=" sua Senha">
+       <br>
+       <input id="input2" type="password" placeholder="confirme senha">
+       <br>
+      <button onclick="button()"><a href="https://meudeus122349090.github.io/Formul/" id="res" style="display:none;">Entrar</a></button><br>
+      <strong style="color:#fff;">@vitin</strong>
+      
+    </div>
+    
+  </body>
+  <style>
+    body{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      background: url("https://picsum.photos/150");
+      background-position: center;
+      background-size: cover;
+      text-align: center;
+    }
+    .login{
+      border: 2px solid #747dff;
+      height:320px;
+      width: 400px;
+      backdrop-filter: blur(20px);
+      border-radius:7px;
+    
+    }
+    input{
+      width: 250px;
+      margin:10px;
+      height: 40px;
+      border-radius: 7px;
+      background:#ffffffdb;
+      outline: none;
+    }
+    input::placeholder{
+      color:black;
+    }
+    h1{
+      color:#fff;
+    }
+    button{
+      height: 40px;
+      width: 80px;
+      border-radius: 7px;
+      color:#6a3dec;
+      background:#6a3decdb;
+    }
+    a{
+      color:#fff;
+      text-decoration: none;
+      font-size: 19px;
+    }
+  </style>
+  <script>
+  function button(){
+    var input1 = document.querySelector("#input1").value
+    var input2 = document.querySelector("#input2").value
+    var input = document.querySelector("#input").value
+    var res = document.querySelector("#res")
+    if(input){
+      
+    }else{
+      window.alert("preencha o Email")
+    }
+    if(input1 == input2 && input1 && input2){
+      window.alert("Cadrastado")
+      res.style.display = "block"
+    }else{
+      window.alert("erro na senha")
+    }
+  }
+  </script>
+</html>
